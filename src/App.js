@@ -40,7 +40,7 @@ export default function App() {
           <Container >
         <Row style={{display:"flex",justifyContent:"center"}}>
           <Route path="/locations" >
-          <SearchForm grabQueryToSearch={grabQueryToSearch} />
+            <SearchForm grabQueryToSearch={grabQueryToSearch} />
             <LocationsList query={searchQuery}/>
             </Route>
           </Row>

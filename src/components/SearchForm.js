@@ -11,7 +11,7 @@ export default function SearchForm(props) {
    setQuery("")
   }
   return (
-    <section className="search-form">
+    <section className="search-form" style={{display:"flex",justifyContent:"center"}}>
      <form className="search"  onSubmit={(event)=>{sendQuery(event)}}>
         <input
           type="text"
