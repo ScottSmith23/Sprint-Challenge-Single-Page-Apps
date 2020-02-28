@@ -39,7 +39,9 @@ export default function App() {
           </Route>
           <Container >
         <Row style={{display:"flex",justifyContent:"center"}}>
-          <Route path="/locations" component={LocationsList} />
+          <Route path="/locations" >
+            <LocationsList query={searchQuery}/>
+            </Route>
           </Row>
         </Container>
         </Switch>

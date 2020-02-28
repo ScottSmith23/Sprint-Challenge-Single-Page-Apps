@@ -8,6 +8,7 @@ export default function SearchForm(props) {
   const sendQuery = event => {
    event.preventDefault();
    props.grabQueryToSearch(query);
+   setQuery("")
   }
   return (
     <section className="search-form">
@@ -20,6 +21,7 @@ export default function SearchForm(props) {
           className="search-name"
           placeholder="Search"
           autoComplete="off"
+          value={query}
         />
        <button > Search! </button>
       </form>
