@@ -24,10 +24,10 @@ export default function LocationsList(props) {
       return (
         <section className="location-list">
           <h2>LOCATIONS!</h2>
-          <Container>
-      <Row>
+          <Container >
+      <Row  >
             {locations.map(location => (
-              <LocationCard key={location.id} location={location} />
+              <LocationCard  key={location.id} location={location} />
             ))}
             </Row>
             </Container>

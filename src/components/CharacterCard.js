@@ -13,7 +13,8 @@ import {
 import styled from "styled-components";
 const CardDiv = styled.div`
 margin-top:30px;
-
+margin-left:auto;
+margin-right:auto;
 `;
 const ImageS = styled.img`
 
@@ -22,7 +23,7 @@ width:70%;
 `;
 export default function CharacterCard (props) {
   return (
-    <Col xs="5" md="5" xl="5">
+    <Col xs="6" md="4" xl="3">
     <CardDiv className="character-card">
     <Card style={{backgroundColor:"tan",paddingLeft:"10%"}}>
     <h2>{props.character.name}</h2>

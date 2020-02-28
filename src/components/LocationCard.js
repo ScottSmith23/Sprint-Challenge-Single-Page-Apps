@@ -22,7 +22,7 @@ width:70%;
 `;
 export default function LocationCard(props) {
   return( 
-    <Col xs="5" md="5" xl="5">
+    <Col xs="6" md="4" xl="3">
     <CardDiv className="character-card">
     <Card style={{backgroundColor:"tan",paddingLeft:"10%"}}>
     <div className="location-card">

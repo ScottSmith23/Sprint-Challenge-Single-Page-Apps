@@ -29,17 +29,18 @@ export default function App() {
             </li>   
           </ul>
         </nav>
-        <SearchForm grabQueryToSearch={grabQueryToSearch} />
+        
         <Switch>
           <Route exact path="/" component={WelcomePage} />
           <Route path="/characters">
-
+          <SearchForm grabQueryToSearch={grabQueryToSearch} />
           <CharacterList query={searchQuery} setQuery={setSearchQuery}/>
 
           </Route>
           <Container >
         <Row style={{display:"flex",justifyContent:"center"}}>
           <Route path="/locations" >
+          <SearchForm grabQueryToSearch={grabQueryToSearch} />
             <LocationsList query={searchQuery}/>
             </Route>
           </Row>
